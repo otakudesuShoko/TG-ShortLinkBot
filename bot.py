@@ -24,7 +24,7 @@ bot = Client('Shortlink bot',
 
 @bot.on_message(Filters.command('start') & Filters.private)
 async def start(bot, update):
-    await update.reply.photo(
+    await update.reply.(
          "https://telegra.ph/file/9679efa9a400052f2835e.jpg",
         f"**Hi {update.chat.first_name}!**\n"
         "**Saya Bot Pemendek Tautan Tanpa Iklan!!**\n"
