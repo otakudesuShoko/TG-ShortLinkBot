@@ -32,15 +32,18 @@ async def start(bot, update):
         "**▪Channel Hiburan [Memes](https://t.ms/MemesRpi)\n\n"
         "Semoga Bermanfaat untuk anda☺"
     )
+         button = InlineKeyboardMarkup(
+        [[InlineKeyboardButton(text="Anak anjing", url="https://t.me/Hyoneechan")]])
+      
+        
     
 @bot.on_message(Filters.command('help') & Filters.private)
 async def start(bot, update):
     await update.reply(
-        f"**Hi {update.chat.first_name}! Namaku URL Shortner ID**\n"
-        "**Saya Bot Pemendek Tautan Tanpa Iklan!!**\n"
-        "**Silahkan gunakan /help untuk cara penggunaan 💡**\n\n"
-        "**▪Bot Developed & Maintained by** [i'm](https://t.me/Hyoneechan)\n"
-        "**▪Channel Hiburan [Memes](https://t.ms/MemesRpi)\n\n"
+        f"**Cara penggunaanya adalah sebagai berikut:**\n"
+        "> Kirimi saya Tautan yang ingin Anda persingkat\n"
+        "• Pilih situs pilihan Anda\n"
+        "• Kirim tautan yang anda sudah salin kesini\n\n"
         "Semoga Bermanfaat untuk anda☺")
       
 @bot.on_message(Filters.regex(r'https?://[^\s]+') & Filters.private)
