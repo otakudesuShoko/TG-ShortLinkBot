@@ -25,11 +25,13 @@ bot = Client('Shortlink bot',
 @bot.on_message(Filters.command('start') & Filters.private)
 async def start(bot, update):
     await update.reply(
-        f"**Hi {update.chat.first_name}!**\n"
+        f"**Hi {update.chat.first_name}! Namaku URL Shortner ID**\n"
         "**Saya Bot Pemendek Tautan Tanpa Iklan!!**\n"
-        "**Silakan gunakan /help untuk cara penggunaan 💡**\n\n"
-        "**Bot Developed & Maintained by** [i'm](https://t.me/Hyoneechan)\n\n"
-        "Channel Hiburan [Memes](https://t.ms/MemesRpi)")
+        "**Silahkan gunakan /help untuk cara penggunaan 💡**\n\n"
+        "**▪Bot Developed & Maintained by** [i'm](https://t.me/Hyoneechan)\n"
+        "**▪Channel Hiburan [Memes](https://t.ms/MemesRpi)\n\n"
+        "Semoga Bermanfaat untuk anda☺"
+    )
       
 @bot.on_message(Filters.regex(r'https?://[^\s]+') & Filters.private)
 async def link_handler(bot, update):
