@@ -30,10 +30,8 @@ async def start(bot, update):
         "**Silahkan gunakan /help untuk cara penggunaan 💡**\n\n"
         "**▪Bot Developed & Maintained by** [i'm](https://t.me/Hyoneechan)\n"
         "**▪Channel Hiburan [Memes](https://t.ms/MemesRpi)\n\n"
-        "Semoga Bermanfaat untuk anda☺"   
-         button = [[InlineKeyboardButton("Link 🔗", url="t.me/Hyoneechan")]]
-         markup = InlineKeyboardMarkup(button))
-        
+        "Semoga Bermanfaat untuk anda☺" )  
+         
     
 @bot.on_message(Filters.command('help') & Filters.private)
 async def start(bot, update):
