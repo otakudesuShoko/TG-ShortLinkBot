@@ -48,7 +48,7 @@ async def link_handler(bot, update):
     if API_KEY:
       try:
         s = pyshorteners.Shortener(api_key=API_KEY) 
-        shortened_url = s.cuttly.short(link)
+        shortened_url = s.bitly.short(link)
         button = [[InlineKeyboardButton("Link 🔗", url=shortened_url)]]
         markup = InlineKeyboardMarkup(button)
         await update.reply_text(text=f'Here is your shortlink \n`{shortened_url}`', reply_markup=markup, quote=True)
